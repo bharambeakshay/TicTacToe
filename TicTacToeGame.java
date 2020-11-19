@@ -15,6 +15,7 @@ public class TicTacToeGame {
         board.add( new ArrayList<String>(Arrays.asList(" "," "," ")));
         board.add( new ArrayList<String>(Arrays.asList(" "," "," ")));
         }
+
     //Symbol Selection
     public static void chooseSymbol(int userSymbolChoice){
         if (userSymbolChoice == 1){
@@ -27,6 +28,14 @@ public class TicTacToeGame {
         }
 
     }
+    //displaying board
+    public static void displayBoard() {
+        System.out.println(board.get(0).get(0)+ " | " +board.get(0).get(1)+ " | " +board.get(0).get(2));
+        System.out.println("----------");
+        System.out.println(board.get(1).get(0)+ " | " +board.get(1).get(1)+ " | " +board.get(1).get(2));
+        System.out.println("----------");
+        System.out.println(board.get(2).get(0)+ " | " +board.get(2).get(1)+ " | " +board.get(2).get(2)+"\n");
+    }
 
 
 
@@ -37,6 +46,7 @@ public class TicTacToeGame {
         System.out.println("Enter the Symbol Choice ");
         int symChoice = choice.nextInt();
         tictactoe.chooseSymbol(symChoice);
+        tictactoe.displayBoard();
 
 
     }
