@@ -28,6 +28,7 @@ public class TicTacToeGame {
         }
 
     }
+    
     //displaying board
     public static void displayBoard() {
         System.out.println(board.get(0).get(0)+ " | " +board.get(0).get(1)+ " | " +board.get(0).get(2));
@@ -37,8 +38,7 @@ public class TicTacToeGame {
         System.out.println(board.get(2).get(0)+ " | " +board.get(2).get(1)+ " | " +board.get(2).get(2)+"\n");
     }
 
-
-
+    //main method
     public static void main(String args[]){
         TicTacToeGame tictactoe = new TicTacToeGame();
         tictactoe.initBoard();
