@@ -30,7 +30,7 @@ public class TicTacToeGame {
     }
 
     //displaying board
-    public static void displayBoard() {
+    public static void printGameBoard() {
         System.out.println(board.get(0).get(0)+ " | " +board.get(0).get(1)+ " | " +board.get(0).get(2));
         System.out.println("----------");
         System.out.println(board.get(1).get(0)+ " | " +board.get(1).get(1)+ " | " +board.get(1).get(2));
@@ -43,10 +43,10 @@ public class TicTacToeGame {
         TicTacToeGame ticTacToe = new TicTacToeGame();
         ticTacToe.initBoard();
         Scanner choice = new Scanner(System.in);
-        System.out.println("Enter the Symbol Choice ");
+        System.out.println("Enter the Symbol Choice  between 1 and 2 ");
         int symChoice = choice.nextInt();
         ticTacToe.chooseSymbol(symChoice);
-        ticTacToe.displayBoard();
+        ticTacToe.printGameBoard();
 
 
     }
